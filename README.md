@@ -1,2 +1,2 @@
 # html5-css3
- Material do Curso de HTML5 e CSS3 do curso em víideo
+Desafios e Exercícios do Curso de HTML5 e CSS3 do curso em víideo
