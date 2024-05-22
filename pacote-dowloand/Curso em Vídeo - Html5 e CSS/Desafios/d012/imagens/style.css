@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --cor-principal: #524DAA;
+    --cor-secundaria: #2B1FFF;
+    --font-destaque: "Passion One", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 70px;
+    padding-top: 20px;
+    font-family: var(--font-destaque);
+}
+
+header p {
+    padding-bottom: 15px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+section {
+    margin: 50px;
+}
