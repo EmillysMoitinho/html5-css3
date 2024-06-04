@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
-    --cor-principal: #524DAA;
-    --cor-secundaria: #2B1FFF;
+    --cor-principal: #55ACE6;
+    --cor-secundaria: #557EE6;
+    --cor-terciaria: #5955E6;
+    --cor-fundo: hsl(243, 100%, 90%);
     --font-destaque: "Passion One", sans-serif;
 }
 
@@ -12,32 +14,63 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+}
+
 header {
     background-color: var(--cor-principal);
     color: white;
     text-align: center;
 }
 
-header h1 {
+header > h1 {
     font-size: 70px;
-    padding-top: 20px;
+    padding-top: 50px;
     font-family: var(--font-destaque);
 }
 
-header p {
-    padding-bottom: 15px;
+header > p {
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
 }
 
-header a:hover {
-    color: var(--cor-secundaria);
+header a:hover, footer a:hover {
+    font-weight: bold;
     text-decoration: underline;
 }
 
 section {
-    margin: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+section.imagem {
+    background-color: var(--cor-principal);
+    color: #000000;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color:#aedaf9;
+}
+
+
+footer {
+    background-color: var(--cor-principal);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
 }
