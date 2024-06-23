@@ -8,13 +8,13 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: hotpink;
+            background-color: pink;
         }
 
 
         h1 {
             text-align: center;
-            color: white;
+            color: deeppink;
         }
 
 
@@ -38,26 +38,25 @@
         }
 
 
-        td {
-            background-color: white;
-        }
-
-
         thead, tfoot {
-            background-color: pink;
+            background-color: deeppink;
             color: white;
         }
-
-
-        .excessao {
-            color: rgb(247, 63, 176);
-            background-color: pink;
-        }
-
-
+        
+        
         td.num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white; 
+        }
+
+       tbody > tr:nth-child(even) {   /* 2n */
+        background-color: rgb(253, 156, 173);
+        }
+
+
     </style>
 </head>
 <body>
@@ -78,7 +77,7 @@
             <thead>
                 <tr>
                     <th scope="col">Estado</th>
-                    <th scope="col" style="width: 50px;">População</th>
+                    <th scope="col" style="width: 100px;">População</th>
                 </tr>
             </thead>
             <tbody>
